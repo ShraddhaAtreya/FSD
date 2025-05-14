@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page with Web Storage Explanation</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+        /* Header */
+        header {
+            grid-column: 1 / -1;
+            background-color: #4a6fa5;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        /* Article - Feedback Form */
+        article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #4a6fa5;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f1f1f1;
+        }
+        
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            border-color: #4a6fa5;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        button {
+            background-color: #4a6fa5;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #3a5a84;
+        }
+        
+        /* Aside - Storage Explanation */
+        aside {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #4a6fa5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .storage-type {
+            font-weight: 600;
+            color: #4a6fa5;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* Footer */
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Customer Feedback</h1>
+            <p>We value your opinion! Please share your thoughts with us.</p>
+        </header>
+        
+        <!-- Feedback Form Section -->
+        <article>
+            <h2>Share Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" required placeholder="Please share your experience with our product or service..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="saveData" name="saveData">
+                        Save my information for next time
+                    </label>
+                </div>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </article>
+        
+        <!-- Web Storage Explanation -->
+        <aside>
+            <h2>Understanding Web Storage</h2>
+            
+            <p>Web Storage is a browser feature that allows websites to store data locally in your browser. This provides several advantages over traditional cookies, including larger storage capacity and better performance.</p>
+            
+            <div class="info-box">
+                <p>Web Storage provides two mechanisms for storing data:</p>
+                <ul>
+                    <li><strong>localStorage</strong></li>
+                    <li><strong>sessionStorage</strong></li>
+                </ul>
+                <p>Both store data as key-value pairs and are available in modern browsers.</p>
+            </div>
+            
+            <h3 class="storage-type">localStorage</h3>
+            <p>localStorage stores data with no expiration date. The data persists even after:</p>
+            <ul>
+                <li>Closing the browser tab</li>
+                <li>Exiting the browser completely</li>
+                <li>Shutting down your computer</li>
+            </ul>
+            <p>This makes localStorage ideal for storing preferences, settings, or other data that should be remembered across browser sessions.</p>
+            
+            <h4>Common Uses:</h4>
+            <ul>
+                <li>Saving user preferences (theme settings, language choices)</li>
+                <li>Remembering form data to avoid re-typing</li>
+                <li>Storing shopping cart contents</li>
+                <li>Saving authentication tokens</li>
+            </ul>
+            
+            <h3 class="storage-type">sessionStorage</h3>
+            <p>sessionStorage stores data only for the duration of a page session. The data is cleared when:</p>
+            <ul>
+                <li>The browser tab is closed</li>
+                <li>The browser is closed (not just refreshed)</li>
+            </ul>
+            <p>Each browser tab maintains its own separate sessionStorage data.</p>
+            
+            <h4>Common Uses:</h4>
+            <ul>
+                <li>Temporarily storing form data during completion</li>
+                <li>Maintaining state during a single visit</li>
+                <li>Storing session identifiers</li>
+                <li>Tracking a user's path through a website</li>
+            </ul>
+            
+            <div class="info-box">
+                <p><strong>Note:</strong> Both storage types are limited to storing about 5-10MB of data (varies by browser) and only store strings. For complex data, you'll need to use JSON to convert objects to strings and back.</p>
+            </div>
+        </aside>
+        
+        <footer>
+            <p> Feedback form and information about local and session storage.</p>
+        </footer>
+    </div>
+</body>
+</html>
