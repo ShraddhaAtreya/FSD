@@ -1,0 +1,142 @@
+HTML code - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <article>
+                <p>Hello! I'm Shraddha C S Atreya</p>
+                <p>I'm currently pursuing MTech in Computer Networking Engineering at Ramaiah Institute of Technology, Bengaluru</p>
+                <video controls>
+                    <source src="assets/media/shraddha.mp4" type="video/mp4">
+                    
+                </video>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>Breast Cancer Prediction Using GAN </li>
+                <li>LangChain RAG for Educational Content Analysis </li>
+                <li>Complex Frame DNA Video Steganography</li>
+            </ul>
+        </section>
+
+        <section id="music">
+            <h2>Background Music</h2>
+            <audio controls loop>
+                <source src="assets/media/video1.mp4" type="audio/mpeg">
+                
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shraddha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+CSS code - 
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Video and audio styles */
+video, audio {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
