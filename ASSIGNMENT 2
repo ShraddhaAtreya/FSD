@@ -1,0 +1,350 @@
+Question 1: Styling Headings and Paragraphs
+
+<!DOCTYPE html>
+<head>
+    <title>
+        My First HTML Page
+    </title>
+    <link rel="stylesheet" href="6.css">
+</head>
+
+<body>
+<h1>About Us</h1>
+<p>We are a team of developers building cool stuff.</p>
+h1{
+    text-align:center;
+}
+p1{
+    color: #333333
+}
+p{
+    font-size:20px;
+}
+
+Question 2: Styling a Navigation Bar
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Example</title>
+    <link rel="stylesheet" href="7.css">
+   
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+</body>
+</html>
+
+nav a {
+    text-decoration: none;  
+    color: #00008B;    
+    padding: 8px 12px;      
+    margin: 0 5px;          
+    display: inline-block; 
+    transition: color 0.3s; 
+}
+
+
+nav a:hover {
+    color: #FF8C00;        
+}
+
+Question 3: Box Styling
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Styling Example</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+    <div class="box">This is a styled box.</div>
+</body>
+</html>
+.box {
+    background-color: #f0f0f0;  
+    padding: 20px;              
+    border: 1px solid black;   
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.box {
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+Question 4: Button Styling
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <button class="btn">Submit</button>
+</body>
+</html>
+.btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+Question 5: Layout with Flexbox
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Example</title>
+    <link rel="stylesheet" href="9.css">
+</head>
+<body>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+</body>
+</html>
+
+.container {
+    display: flex;                
+    flex-direction: row;          
+    justify-content: space-between; 
+    padding: 20px;               
+}
+.container div {
+    background-color: #3498db;    
+    color: white;                 
+    padding: 20px;                
+    border-radius: 5px;          
+    min-width: 100px;             
+    text-align: center;          
+    font-weight: bold;          
+}
+
+Question 6: Hover Card with Shadow
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Card with Shadow</title>
+    <link rel="stylesheet" href="hover_card.css">
+</head>
+<body>
+    <div class="card">
+        <h3>Product Title</h3>
+        <p>Some product description goes here.</p>
+    </div>
+</body>
+</html>
+
+
+.card {
+    border: 1px solid #ddd;      
+    padding: 20px;               
+    border-radius: 8px;           
+    background-color: white;      
+    max-width: 300px;             
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    transition: box-shadow 0.3s ease;  
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+.card h3 {
+    margin-top: 0;                
+    color: #333;                 
+    margin-bottom: 10px;            
+}
+
+.card p {
+    color: #666;                  
+    line-height: 1.5;             
+    margin-bottom: 0;             
+}
+
+
+Question 7: Style Even and Odd Rows Differently
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Striped Table Example</title>
+    <link rel="stylesheet" href="oddeven.css">
+</head>
+<body>
+    <h1>Striped Table Example</h1>
+    
+    <table>
+        <tr><td>Row 1</td></tr>
+        <tr><td>Row 2</td></tr>
+        <tr><td>Row 3</td></tr>
+        <tr><td>Row 4</td></tr>
+    </table>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+Question 8: Positioning a Badge on an Image
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge on Image Example</title>
+    <link rel="stylesheet" href="badge.css">
+       
+</head>
+<body>
+    <h1>Badge on Image Example</h1>
+    
+    <div class="image-container">
+        <img src="product.jpg" alt="Product" width="200">
+        <span class="badge">New</span>
+    </div>
+</body>
+</html>
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+Question 9: Responsive Text Size
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+    <style>
+        h1 {
+            font-size: 32px;
+        }
+
+        @media(max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Responsive Heading</h1>
+</body>
+
+</html>
+
+Question 10: Navigation Menu with Active Link
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10</title>
+    <style>
+        nav {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+            padding-bottom: 5px;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        a.active {
+            border-bottom: 2px solid black;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    </nav>
+
+</body>
+
+</html>
+
+
+
