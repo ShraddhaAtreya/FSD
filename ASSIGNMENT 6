@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Student Profile</h2>
+            
+            <p><strong>Name:</strong> Shraddha C S Atreya</p>
+            <p><strong>USN:</strong> 1MS24SCN17</p>
+            <p><strong>Semester:</strong> Second semester</p>
+        </aside>
+        <section>
+            <h2>Academic Performance</h2>
+            
+            <article>
+                <h3>Mathematics</h3>
+                <time datetime="2025-04-13">Test Date: April 13, 2025</time>
+                <p>Assignment Completion:</p>
+                <progress value="4" max="5"></progress>
+                <p>Test Score:</p>
+                <meter value="85" min="0" max="100" low="40" high="90" optimum="95"></meter>
+                <details>
+                    <summary>Show Comments</summary>
+                    <blockquote>
+                        <p>The student has shown excellent improvement in calculus. Her problem-solving approach is methodical, but he needs to work on algebraic simplifications.</p>
+                        <cite>- Prof. Anill</cite>
+                    </blockquote>
+                </details>
+            </article>
+            
+            <article>
+                <h3>Advanced Computer Networks</h3>
+                <time datetime="2025-04-20">Test Date: April 20, 2025</time>
+                <p>Assignment Completion:</p>
+                <progress value="3" max="5"></progress>
+                <p>Test Score:</p>
+                <meter value="78" min="0" max="100" low="40" high="90" optimum="95"></meter>
+                <details>
+                    <summary>Show Comments</summary>
+                    <blockquote>
+                        <p>Good understanding of theoretical concepts, but needs more practice with laboratory reports. Experimental analysis needs improvement.</p>
+                        <cite>- Dr. Nirmala</cite>
+                    </blockquote>
+                </details>
+            </article>
+            
+            <article>
+                <h3>Advanced Computational Intelligence </h3>
+                <time datetime="2025-04-18">Test Date: April 18, 2025</time>
+                <p>Assignment Completion:</p>
+                <progress value="5" max="5"></progress>
+                <p>Test Score:</p>
+                <meter value="92" min="0" max="100" low="40" high="90" optimum="95"></meter>
+                <details>
+                    <summary>Show Comments</summary>
+                    <blockquote>
+                        <p>Excellent critical analysis of literary works. She essays demonstrate deep understanding of Machine Learning Algorithms.</p>
+                        <cite>- Dr. Sankhya</cite>
+                    </blockquote>
+                </details>
+            </article>
+        </section>
+
+
+        <section>
+            <h2>Overall Performance</h2>
+            <p>Average Score:</p>
+            <meter value="85" min="0" max="100" low="40" high="90" optimum="95"></meter>
+            <p>Total Assignment Completion:</p>
+            <progress value="12" max="15"></progress>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: info@msrit.edu</p>
+        <p>&copy; <time datetime="2025">2025</time> Student Performance Dashboard</p>
+    </footer>
+</body>
+</html>
