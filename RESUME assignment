@@ -1,1 +1,381 @@
+----- HTML CODE -----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shraddha C S Atreya - Resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>SHRADDHA C S ATREYA</h1>
+            <div class="contact-info">
+                <p>LinkedIn: <a href="https://linkedin.com/in/shraddha-c-s-atreya">linkedin.com/shraddha-c-s-atreya</a></p>
+                <p>Email: <a href="mailto:atreyashraddha@gmail.com">atreyashraddha@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/ShraddhaAtreya">github.com/ShraddhaAtreya</a></p>
+                <p>Mobile: +91 9103454566</p>
+            </div>
+        </header>
 
+        <section class="section">
+            <h2>EDUCATION</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Ramaiah Institute of Technology</h3>
+                    <span class="location">Bengaluru, India</span>
+                </div>
+                <p><em>Master of Technology in Computer Network Engineering</em> | CGPA - 9.04 | 2024 – Present</p>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Jawaharlal Nehru New College of Engineering</h3>
+                    <span class="location">Shivamogga, India</span>
+                </div>
+                <p><em>Bachelor of Technology in Computer Science and Engineering</em> | CGPA - 8.53 | 2020 - 2024</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>SKILLS</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Python</li>
+                <li><strong>Database:</strong> MySQL</li>
+                <li><strong>Web Technology:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Tools:</strong> MySQL, NS3 simulator, Wireshark</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>WORK EXPERIENCE</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Ekathva Innovations</h3>
+                    <span class="duration">Aug 2023 - Sept 2023</span>
+                </div>
+                <p class="position"><em>Data Analyst Intern</em></p>
+                <ul>
+                    <li>Refined and pre-processed the Starbucks dataset to ensure data integrity and accuracy, enabling robust and reliable analysis.</li>
+                    <li>Implemented machine learning models to predict calorie content, utilizing algorithms such as linear regression, decision tree, and gradient boosting algorithms, which yielded an accuracy of 97.9%, 97.9%, and 98.1%, respectively.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>PROJECTS</h2>
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Breast Cancer Prediction Using GAN</h3>
+                    <span class="duration">Feb 2025 - March 2025</span>
+                </div>
+                <p class="tech-stack"><em>Python, Scikit-learn, Apriori, Random Forest</em></p>
+                <ul>
+                    <li>Built a breast cancer classification system integrating GANs for synthetic data generation with SMOTETomek for addressing dataset imbalance issues, enabling more accurate predictions for minority class cases.</li>
+                    <li>Applied the Apriori algorithm to uncover significant association rules between patient attributes and cancer recurrence, identifying critical patterns distinguishing recurrent and non-recurrent cases.</li>
+                    <li>The model attained outstanding performance metrics, including 85% precision, 85% recall, and 91% ROC-AUC score, highlighting its robust predictive abilities for both cancer detection and recurrence.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>LangChain RAG for Educational Content Analysis</h3>
+                    <span class="duration">Jan 2025 – March 2025</span>
+                </div>
+                <p class="tech-stack"><em>Python, LangChain, LLMs</em></p>
+                <ul>
+                    <li>An advanced AI-powered question analysis system was formulated, utilizing Retrieval-Augmented Generation (RAG) and Large Language Models to process and categorize educational content from PDF files accurately.</li>
+                    <li>A comprehensive classification framework was implemented to systematically sort questions into five specific categories: one-word answers, true/false, multiple-choice, short-answer, and long-answer formats.</li>
+                    <li>A Python-based solution was created, incorporating external knowledge retrieval methods to facilitate efficient processing of educational content.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Complex Frame DNA Video Steganography</h3>
+                    <span class="duration">Feb 2024 – May 2024</span>
+                </div>
+                <p class="tech-stack"><em>Python, DNA Encoding, Caesar Cipher</em></p>
+                <ul>
+                    <li>Developed a novel method for video steganography by integrating DNA-based data embedding with strategic frame selection, enabling advanced data concealment techniques.</li>
+                    <li>Enhanced data protection by creating and embedding artificial DNA sequences into specific intricate frames, ensuring secure data transfer over the internet with minimal detectability.</li>
+                    <li>Applied advanced encryption and steganographic techniques to protect sensitive information from unauthorized access, implementing multi-layered security protocols.</li>
+                    <li>The average Peak Signal to Noise Ratio value secured was 95.25, and the Mean Square Error value was 1.4 × 10⁻⁶.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>ACHIEVEMENTS</h2>
+            <ul>
+                <li>Secured 2nd prize in the India Workshop Challenge by ReactPlay FOSS for designing an innovative personal portfolio.</li>
+                <li>Authored a paper titled 'Video Steganography with DNA and Complex Frames', published in the International Journal of Scientific Research in Engineering and Management (IJSREM) in May 2024.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+                <li>Cloud Computing Fundamentals </li>
+                <li>The Data Science Course: Complete Data Science Bootcamp </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+---- CSS CODE ----
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {                                  //pseudo element
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Education Styles */
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.education-header h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.location {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Skills Styles */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border-left: 4px solid #e74c3c;
+    font-size: 1rem;
+}
+
+.skills-list li strong {
+    color: #2c3e50;
+}
+
+/* Experience Styles */
+.experience-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #27ae60;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-header h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.duration {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.position {
+    color: #27ae60;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Project Styles */
+.project-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #9b59b6;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-header h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tech-stack {
+    color: #9b59b6;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .education-header,
+    .experience-header,
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .location,
+    .duration {
+        margin-top: 5px;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .contact-info p {
+        font-size: 0.8rem;
+    }
+}
